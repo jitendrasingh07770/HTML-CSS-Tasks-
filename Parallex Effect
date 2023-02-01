@@ -1,0 +1,41 @@
+<html> 
+ <head> 
+  <title>Parallex effect</title> 
+  <style>
+      .parallax {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.layer {
+  height: 500px;
+  position: absolute;
+  width: 100%;
+}
+
+.layer1 {
+  background-image: url(img.png);
+  background-size: cover;
+  background-position: center;
+  bottom: -150px;
+}
+
+.layer2 {
+  background-image: url(img.png);
+  background-size: cover;
+  background-position: center;
+  bottom: -50px;
+}
+  
+    </style> 
+ </head> 
+ <body> 
+  <div class="parallax"> 
+   <div class="layer layer1"> <!-- Content for layer 1 --> 
+   </div> 
+   <div class="layer layer2"> <!-- Content for layer 2 --> 
+   </div> 
+  </div> 
+ </body>
+</html>
